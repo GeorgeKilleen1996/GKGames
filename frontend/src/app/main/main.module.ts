@@ -7,6 +7,7 @@ import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PromoBannerComponent } from './components/promo-banner/promo-banner.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LogoSearchBasketBannerComponent } from './components/logo-search-basket-banner/logo-search-basket-banner.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     DefaultLayoutComponent,
     NavbarComponent,
     PromoBannerComponent,
-    FooterComponent
+    FooterComponent,
+    LogoSearchBasketBannerComponent
   ],
   imports: [
     CommonModule,
