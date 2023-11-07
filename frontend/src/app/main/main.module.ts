@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PromoBannerComponent } from './components/promo-banner/promo-banner.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoSearchBasketBannerComponent } from './components/logo-search-basket-banner/logo-search-basket-banner.component';
+import { IconModule } from '../ui/icon/icon.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LogoSearchBasketBannerComponent } from './components/logo-search-basket
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    IconModule,
   ]
 })
 export class MainModule { }
