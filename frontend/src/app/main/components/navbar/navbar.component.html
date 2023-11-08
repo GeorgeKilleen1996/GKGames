@@ -1,7 +1,17 @@
-<div class="md:flex justify-center items-center gap-4 text-xs py-2 w-full hidden">
-    <button type="button">Pokemon</button>
-    <button type="button">Clothing & Accessories</button>
-    <button type="button">Sale</button>
-    <button type="button">Sell to us</button>
-    <button type="button">Blog</button>
+<div class="relative h-12 flex justify-center items-center z-50 w-screen">
+    <div class="absolute flex flex-col items-center top-0">
+        <div class="md:flex justify-center items-center gap-4 text-xs py-2 hidden font-semibold tracking-wide w-screen">
+            <div (mouseenter)="showMenu('pokemon')" (mouseleave)="hideMenu()">
+                <button type="button" class="flex items-center gap-1">
+                    Pokemon
+                    <ng-icon name="ionCaretDown" class="transition-all duration-300" [ngClass]="{'rotate-180' : navbarData === 'pokemon'}"></ng-icon>
+                </button>
+                <app-navbar-dropdown *ngIf="navbarData === 'pokemon'" class="absolute left-0"></app-navbar-dropdown>
+            </div>
+            <button type="button">Clothing & Accessories</button>
+            <button type="button" class="text-red-600">Sale</button>
+            <button type="button">Sell to us</button>
+            <button type="button">Blog</button>
+        </div>
+    </div>
 </div>
